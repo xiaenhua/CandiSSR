@@ -1,6 +1,4 @@
-=====================================================================================================================
 CandiSSR: An efficient pipeline used for identifying candidate polymorphic SSRs based on multiple assembled sequences
-=====================================================================================================================
 
 Introduction
 ------------
