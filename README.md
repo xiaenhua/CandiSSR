@@ -35,6 +35,7 @@ You can install the pipeline fllowing the below steps:
  2) unpack CandiSSR.tar.gz
  3) cd CandiSSR
  4) sh setup.sh
+ 
  The setup script will ask you a few basic questions to setup CandiSSR.
 
 A more detail installation steps please refers to: http://www.plantkingdomgdb.com/CandiSSR/install_on_linux.html
@@ -46,6 +47,9 @@ http://www.plantkingdomgdb.com/CandiSSR/
 Contact
 -------
 Dr. En-Hua Xia (xiaenhua@gmail.com) and CC to Dr. Li-Zhi Gao (lgao@mail.kib.ac.cn)
+
 Plant Germplasm and Genomics Center in Southwest China
+
 Germplasm Bank of Wild Species, Kunming Institute of Botany
+
 Chinese Academy of Sciences, Kunming 650201, China
