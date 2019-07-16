@@ -1,0 +1,131 @@
+=================================
+Installing CandiSSR on Linux
+=================================
+
+Installing steps (64 bit)
+
+1. Install perl package if they are not installed in your server (as root) :
+
+   wget http://www.cpan.org/src/5.0/perl-5.20.2.tar.gz
+   tar -xzf perl-5.20.2.tar.gz
+   cd perl-5.20.2
+   ./Configure -des -Dprefix=$HOME/localperl
+   make
+   make test
+   make install
+
+2. Install the Bioperl (if Bioperl is not installed)
+
+   mkdir -p $HOME/Bioperl
+   cd $HOME/Bioperl
+   wget http://bioperl.org/DIST/BioPerl-1.6.1.tar.gz
+   tar -zxvf BioPerl-1.6.1.tar.gz
+   cd BioPerl-1.6.1
+   perl Build.PL
+   ./Build test
+   ./Build install (as root)
+
+3. Install the MISA (if MISA is not installed)
+
+   mkdir -p $HOME/MISA
+   cd $HOME/MISA
+   wget http://pgrc.ipk-gatersleben.de/misa/download/misa.pl
+   wget http://pgrc.ipk-gatersleben.de/misa/download/misa.ini
+   Note: Both misa.pl and misa.ini should be downloaded and placed in the same directory!
+
+4. Install the Blastall package(if Blastall package is not installed)
+
+   mkdir -p $HOME/Blastall
+   cd $HOME/Blastall
+   wget http://ftp.ncbi.nlm.nih.gov/blast/executables/release/2.2.26/blast-2.2.26-x64-linux.tar.gz
+   tar -zxvf blast-2.2.26-x64-linux.tar.gz
+   cd blast-2.2.26
+   echo 'export PATH=$PATH:/$HOME/Blastall/blast-2.2.26/bin' >> ~/.bashrc
+   source ~/.bashrc
+
+5. Install the ClustalW package(if ClustalW package is not installed)
+   
+   mkdir -p $HOME/ClustalW
+   cd $HOME/ClustalW
+   wget http://www.clustal.org/download/current/clustalw-2.1.tar.gz
+   tar -zxvf clustalw-2.1.tar.gz
+   cd clustalw-2.1
+   ./configure --prefix=/home/Soft/clustalw-2.1
+   make && make install
+   echo 'export PATH=$PATH:/home/Soft/clustalw-2.1/bin' >> ~/.bashrc
+   source ~/.bashrc
+
+6. Install the Primer3 package(if Primer3 package is not installed)
+
+   mkdir -p $HOME/Primer3
+   cd $HOME/Primer3
+   wget http://downloads.sourceforge.net/project/primer3/primer3/2.3.6/primer3-src-2.3.6.tar.gz
+   tar -zxvf primer3-src-2.3.6.tar.gz
+   cd primer3-2.3.6/src/
+   make all
+   make test
+   echo 'export PATH=$PATH:$HOME/Primer3/primer3-2.3.6/src/' >> ~/.bashrc
+   source ~/.bashrc
+ 
+7. Download the CandiSSR
+
+   mkdir -p $HOME/CandiSSR
+   cd $HOME/CandiSSR
+   wget http://www.plantkingdomgdb.com/CandiSSR/CandiSSR.tar.gz
+   ...... (Downloading the CandiSSR)
+   tar -zxvf CandiSSR.tar.gz
+   ...... (Uncompressing the CandiSSR)
+
+8. Setup the CandiSSR
+
+   cd $HOME/CandiSSR
+ 
+   sh setup.sh
+
+   START TO SET UP FOR CandiSSR!!!
+
+   The detected path of blastall is /usr/bin/blastall. Is it correct? [Y/n] Y
+
+   misa is not found. Is the program already installed? [y/N] Y
+   Please enter the path of misa program (ex: /home/misa/bin/): /home/SoftWare/MISA
+
+   The detected path of clustalw is /usr/bin/clustalw2. Is it correct? [Y/n] Y
+
+   The detected path of primer3 is /usr/bin/primer3_core. Is it correct? [Y/n] Y
+   CandiSSR is successfully installed!!!
+
+   More information please refer to: http://www.plantkingdomgdb.com/CandiSSR/.
+
+9. Test the CandiSSR with four Camellia transcriptomes
+
+   perl CandiSSR.pl -i ./sample_data/CandiSSR.ctl
+
+   Thu Apr  9 12:49:01 CST 2015
+
+   ########################################
+     Welcome to use CandiSSR packages!
+
+       Author: En-Hua Xia @ KIB
+       Date: 2015-4-2
+       Contact: xiaenhua.kib.ac.cn
+       Version: 1.0
+  ########################################
+
+   Parameters for running:
+          Data config file:       [CandiSSR.ctl]
+          Output prefix:  [CandiSSR_Output]
+          SSR flanking length:    [100]
+          Blast identity cutoff:  [95]
+          Blast coverage cutoff:  [95]
+          Number of CPU:  [10]
+
+
+          ...... (Verbose Messages)
+
+          Done!
+
+          The final result file containing polymorphic SSRs has been successfully generated ...
+
+          Good Luck!
+
+   Thu Apr  9 12:49:11 CST 2015

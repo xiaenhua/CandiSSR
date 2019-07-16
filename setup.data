@@ -1,0 +1,4 @@
+BLASTALL blastall ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.2.26/
+MISA misa http://pgrc.ipk-gatersleben.de/misa/
+CLUSTALW clustalw2 http://www.clustal.org/download/current/
+PRIMER3 primer3_core http://primer3.sourceforge.net/
