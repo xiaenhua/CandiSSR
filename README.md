@@ -29,8 +29,7 @@ Dependent software and packages
 
 Alternatively, you can download all the requirments from our website at: http://www.plantkingdomgdb.com/CandiSSR/requirments/
 
-After downloading and installing all the dependent software and packages
-You can install the pipeline fllowing the below steps:
+After downloading and installing all the dependent software and packages, you can install the pipeline fllowing the below steps:
  1) download the file CandiSSR.tar.gz
  2) unpack CandiSSR.tar.gz
  3) cd CandiSSR
