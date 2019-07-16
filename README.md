@@ -1,4 +1,3 @@
-=========
 CandiSSR: An efficient pipeline used for identifying candidate polymorphic SSRs based on multiple assembled sequences
 =========
 
@@ -36,7 +35,7 @@ You can install the pipeline fllowing the below steps:
  2) unpack CandiSSR.tar.gz
  3) cd CandiSSR
  4) sh setup.sh
-The setup script will ask you a few basic questions to setup CandiSSR.
+ The setup script will ask you a few basic questions to setup CandiSSR.
 
 A more detail installation steps please refers to: http://www.plantkingdomgdb.com/CandiSSR/install_on_linux.html
 
