@@ -55,4 +55,6 @@ Chinese Academy of Sciences, Kunming 650201, China
 
 Citation
 --------
+Please cite us if you use CandiSSR:
+
 Xia EH, Yao QY, Zhang HB, Jiang JJ, Zhang LP and Gao LZ. (2016). CandiSSR: An efficient pipeline used for identifying candidate polymorphic SSRs based on multiple assembled sequences. Front. Plant Sci. 6:1171. doi: 10.3389/fpls.2015.01171
