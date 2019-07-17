@@ -66,11 +66,11 @@ perl CandiSSR.pl -i Ctg_file -o CandiSSR_Run -p Prefix -l FlankingLen -s Identit
 
 <b>Data Config File Format (split by space):</b>
 
-&emsp;&emsp;1\) The data for each species/individual must be placed in one row with two columns: </br>
+&emsp;&ensp;1\) The data for each species/individual must be placed in one row with two columns: </br>
 &emsp;&emsp;&ensp;col1: Name of Species/individual; </br>
 &emsp;&emsp;&ensp;col2: The path to data file; </br>
-&emsp;&emsp;2\) They should be splited by space; </br>
-&emsp;&emsp;3\) !!!!Very important!!!! </br>
+&emsp;&ensp;2\) They should be splited by space; </br>
+&emsp;&ensp;3\) !!!!Very important!!!! </br>
 &emsp;&emsp;&ensp;One species or individual must be selected as reference;</br> 
 &emsp;&emsp;&ensp;Meanwhile, its species name must be set with "Ref" in the first column.</br>
 
