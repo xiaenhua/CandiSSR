@@ -56,13 +56,13 @@ perl CandiSSR.pl -i Ctg_file -o CandiSSR_Run -p Prefix -l FlankingLen -s Identit
 &emsp;-o&emsp;\<str\>&emsp;Name of directory for output.&ensp;\[default: CandiSSR_Run\]</br>
 &emsp;-p&emsp;\<str\>&emsp;The prefix of output file.&ensp;\[default: CandiSSR_Output\]</br>
 &emsp;-l&emsp;&nbsp;\<int\>&emsp;The flanking sequence length of SSRs.&ensp;\[default: 100\]</br>
-&emsp;-e&emsp;&nbsp;\<int\>&emsp;Blast evalue cutoff.&ensp;\[default: 1e-10\]</br>
-&emsp;-s&emsp;&nbsp;\<int\>&emsp;Blast identity cutoff.&ensp;\[default: 95\]</br>
-&emsp;-c&emsp;&nbsp;\<int\>&emsp;Blast coverage cutoff.&ensp;\[idefault: 95\]</br>
+&emsp;-e&emsp;\<int\>&emsp;Blast evalue cutoff.&ensp;\[default: 1e-10\]</br>
+&emsp;-s&emsp;\<int\>&emsp;Blast identity cutoff.&ensp;\[default: 95\]</br>
+&emsp;-c&emsp;\<int\>&emsp;Blast coverage cutoff.&ensp;\[idefault: 95\]</br>
 &emsp;-t&emsp;&nbsp;\<int\>&emsp;Number of CPU used in blast searches.&ensp;\[default: 10\]</br>
 &emsp;-skipPE&emsp;&ensp;&nbsp;Skip Primer Evaluation (PE) step, which is extremely time-consuming</br>
-&emsp;-clean&emsp;&ensp;&nbsp;Clean the output directory and only retain the CandiSSR file</br>
-&emsp;-h&emsp;&ensp;&nbsp;Show this help and exit</br>
+&emsp;-clean&emsp;&emsp;&ensp;&nbsp;Clean the output directory and only retain the CandiSSR file</br>
+&emsp;-h&emsp;&emsp;&ensp;&nbsp;Show this help and exit</br>
 
 <b>Data Config File Format (split by space):</b>
 
