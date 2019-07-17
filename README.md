@@ -5,7 +5,7 @@ Introduction
 ------------
 Simple sequence repeats (SSRs) (also called microsatellites), consisting of repeated sequences of 2~6 bp in length, have been widely used in QTL analysis, evaluation of genetic variation and construction of genetic linkage maps. Recent adcances in next generation sequencing have rapidly accelerated the genome/transcriptomic sequencing projects in serveral species. Accordingly, lots of SSRs were also detected among them; however, due to the low efficiency of traditional experimental methods, few avaliable polymorphic SSRs of them are currently identified. Thus, we here had developed a new bioinformatics pipeline, CandiSSR, to automatically search the candidate polymorphic SSRs of a given species or genus based on their given assembled sequences. With this pipeline, user can detect polymorphic SSRs from a control file containing multiple assembled sequences of a given species or genus.
 
-Dependent software and packages
+Dependances
 -------------------------------
  1) Perl</br>
     You should have perl installed, if not, it is freely available at https://www.perl.org/.
@@ -52,9 +52,9 @@ Typing perl $DIRECTORY_OF_CandiSSR/CandiSSR.pl with below options.
 perl CandiSSR.pl -i Ctg_file -o CandiSSR_Run -p Prefix -l FlankingLen -s Identity -c Coverage -t Cpu [-h]
 
  Options:</br>
- -i   <str>   The data config file. *Must be given</br>
- -o   <str>   Name of directory for output. [default: CandiSSR_Run]</br>
- -p   <str>   The prefix of output file. [default: CandiSSR_Output]</br>
+ -i\t<str>\tThe data config file.\t*Must be given</br>
+ -o\t<str>   Name of directory for output. [default: CandiSSR_Run]</br>
+ -p\t<str>   The prefix of output file. [default: CandiSSR_Output]</br>
  -l   <int>   The flanking sequence length of SSRs. [default: 100]</br>
  -e   <int>   Blast evalue cutoff. [default: 1e-10]</br>
  -s   <int>   Blast identity cutoff. [default: 95]</br>
