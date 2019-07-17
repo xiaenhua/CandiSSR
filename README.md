@@ -119,7 +119,7 @@ CandiSSR will output three files under the Output directory (with -o option):
 &emsp;&ensp; col2: Forward sequence of the 1st primer pair.</br>
 &emsp;&ensp; col3: Melting temperature for col2. </br>
 &emsp;&ensp; col4: Sequence size of col2.</br>
-&emsp;&ensp;&emsp;&ensp;&ensp;          <... if -skipPE option wasn't specified ...></br>
+&emsp;&ensp;&emsp;&ensp;&ensp;          <i><... if -skipPE option wasn't specified ...></i></br>
 &emsp;&ensp; col5: Average forward sequence similarity for primers designed in Ref against others.</br>
 &emsp;&ensp; col6: Average forward sequence coverage for primers designed in Ref against others.</br>
 &emsp;&ensp; col7: Reverse sequence of the 1st primer pair.</br>
