@@ -5,9 +5,8 @@ Introduction
 ------------
 Simple sequence repeats (SSRs) (also called microsatellites), consisting of repeated sequences of 2~6 bp in length, have been widely used in QTL analysis, evaluation of genetic variation and construction of genetic linkage maps. Recent adcances in next generation sequencing have rapidly accelerated the genome/transcriptomic sequencing projects in serveral species. Accordingly, lots of SSRs were also detected among them; however, due to the low efficiency of traditional experimental methods, few avaliable polymorphic SSRs of them are currently identified. Thus, we here had developed a new bioinformatics pipeline, CandiSSR, to automatically search the candidate polymorphic SSRs of a given species or genus based on their given assembled sequences. With this pipeline, user can detect polymorphic SSRs from a control file containing multiple assembled sequences of a given species or genus.
 
-Installation
-------------
 Dependent software and packages
+-------------------------------
  1) Perl</br>
     You should have perl installed, if not, it is freely available at https://www.perl.org/.
 
@@ -15,7 +14,7 @@ Dependent software and packages
     It is freely available at http://pgrc.ipk-gatersleben.de/misa/.
 
  3) NCBI Blastall</br>
-    Note: The NCBI Blastall package (version: 2.2.26) NOT ncbi-blast+ works well.</br>
+    Note: The NCBI Blastall package (version: 2.2.26) <b>NOT</b> ncbi-blast+ works well.</br>
     It is freely available at ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.2.26/.
 
  4) Bioperl packages (SearchIO and getopt)</br>
@@ -29,11 +28,13 @@ Dependent software and packages
 
 Alternatively, you can download all the requirments from our website at: http://www.plantkingdomgdb.com/CandiSSR/requirments/
 
-<b>To install the pipeline</b>
+Installation
+------------
  1) download the file CandiSSR.tar.gz
  2) unpack CandiSSR.tar.gz
  3) cd CandiSSR
- 4) bash setup.sh<br/>
+ 4) bash setup.sh
+ 
  The setup script will ask you a few basic questions to setup CandiSSR.
 
 A more detail installation steps please refers to: http://www.plantkingdomgdb.com/CandiSSR/install_on_linux.html
@@ -50,36 +51,35 @@ Typing perl $DIRECTORY_OF_CandiSSR/CandiSSR.pl with below options.
 
 perl CandiSSR.pl -i Ctg_file -o CandiSSR_Run -p Prefix -l FlankingLen -s Identity -c Coverage -t Cpu [-h]
 
- Options:
- -i    <str>   The data config file. *Must be given.
- -o   <str>   Name of directory for output. [default: CandiSSR_Run]
- -p   <str>   The prefix of output file. [default: CandiSSR_Output]
- -l    <int>   The flanking sequence length of SSRs. [default: 100]
- -e   <int>   Blast evalue cutoff. [default: 1e-10]
- -s   <int>   Blast identity cutoff. [default: 95]
- -c   <int>   Blast coverage cutoff. [idefault: 95]
- -t   <int>   Number of CPU used in blast searches. [default: 10]
- -skipPE     Skip Primer Evaluation (PE) step, which is extremely time-consuming.
- -clean        Clean the output directory and only retain the CandiSSR file.
- -h               Show this help and exit.
-
+ Options:</br>
+ -i   <str>   The data config file. *Must be given</br>
+ -o   <str>   Name of directory for output. [default: CandiSSR_Run]</br>
+ -p   <str>   The prefix of output file. [default: CandiSSR_Output]</br>
+ -l   <int>   The flanking sequence length of SSRs. [default: 100]</br>
+ -e   <int>   Blast evalue cutoff. [default: 1e-10]</br>
+ -s   <int>   Blast identity cutoff. [default: 95]</br>
+ -c   <int>   Blast coverage cutoff. [idefault: 95]</br>
+ -t   <int>   Number of CPU used in blast searches. [default: 10]</br>
+ -skipPE      Skip Primer Evaluation (PE) step, which is extremely time-consuming</br>
+ -clean       Clean the output directory and only retain the CandiSSR file</br>
+ -h           Show this help and exit</br>
 
 <b>Data Config File Format (split by space):</b>
 
-   1) The data for each species/individual must be placed in one row with two columns: 
-      col1: Name of Species/individual; 
-      col2: The path to data file; 
-   2) They should be splited by space; 
-   3) !!!!Very important!!!! 
-      One species or individual must be selected as reference; 
-      Meanwhile, its species name must be set with "Ref" in the first column.
+   1) The data for each species/individual must be placed in one row with two columns: </br>
+      col1: Name of Species/individual; </br>
+      col2: The path to data file; </br>
+   2) They should be splited by space; </br>
+   3) !!!!Very important!!!! </br>
+      One species or individual must be selected as reference;</br> 
+      Meanwhile, its species name must be set with "Ref" in the first column.</br>
 
-<b>Example</b> 
-   #Name          Path_to_data_files 
-    Ref          ./sample_data/COL.fasta 
-    CRD          ./sample_data/CRD.fasta 
-    CSI          ./sample_data/CSI.fasta 
-    CTA          ./sample_data/CTA.fasta 
+<b>Example</b> </br>
+   #Name          Path_to_data_files</br> 
+    Ref          ./sample_data/COL.fasta </br>
+    CRD          ./sample_data/CRD.fasta </br>
+    CSI          ./sample_data/CSI.fasta </br>
+    CTA          ./sample_data/CTA.fasta </br>
     ......          ......
     
  Note: Lines begin with "#" will be ignored! 
