@@ -101,7 +101,6 @@ CandiSSR will output three files under the Output directory (with -o option):
 &emsp;&ensp; col3: The detail information for reference SSR; </br>
 &emsp;&ensp;&emsp;&ensp;&ensp;       Repetition|SeqID:Start-End; such as: <b>5|Ref_315:735681-735895</b></br>
 &emsp;&ensp; col4: Same as col3;</br>
-<font color="gray">xxxxxx</font>
 &emsp;&ensp; col5: Same as col3;</br>
 &emsp;&ensp;&emsp;&ensp;&ensp;          <i><... if three genomes or transcriptomes provided ...></i></br>
 &emsp;&ensp; col6: The Standard Deviation (SD) of SSR repetitions among different data sets;</br>
@@ -120,7 +119,7 @@ CandiSSR will output three files under the Output directory (with -o option):
 &emsp;&ensp; col2: Forward sequence of the 1st primer pair;</br>
 &emsp;&ensp; col3: Melting temperature for col2; </br>
 &emsp;&ensp; col4: Sequence size of col2;</br>
-&emsp;&ensp;<... if -skipPE option wasn't specified ...></br>
+&emsp;&ensp;&emsp;&ensp;&ensp;          <... if -skipPE option wasn't specified ...></br>
 &emsp;&ensp; col5: Average forward sequence similarity for primers designed in Ref against others;</br>
 &emsp;&ensp; col6: Average forward sequence coverage for primers designed in Ref against others;</br>
 &emsp;&ensp; col7: Reverse sequence of the 1st primer pair;</br>
