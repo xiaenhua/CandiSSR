@@ -52,3 +52,7 @@ Plant Germplasm and Genomics Center in Southwest China
 Germplasm Bank of Wild Species, Kunming Institute of Botany
 
 Chinese Academy of Sciences, Kunming 650201, China
+
+Citation
+--------
+Xia E-H, Yao Q-Y, Zhang H-B, Jiang J-J, Zhang L-P and Gao L-Z (2016) CandiSSR: An Efficient Pipeline used for Identifying Candidate Polymorphic SSRs Based on Multiple Assembled Sequences. Front. Plant Sci. 6:1171. doi: 10.3389/fpls.2015.01171
