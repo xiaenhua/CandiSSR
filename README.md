@@ -52,7 +52,7 @@ Typing perl $DIRECTORY_OF_CandiSSR/CandiSSR.pl with below options.
 perl CandiSSR.pl -i Ctg_file -o CandiSSR_Run -p Prefix -l FlankingLen -s Identity -c Coverage -t Cpu [-h]
 
   <b>Options:</b></br>
-&emsp;-i&emsp;\<str\>&emsp;The data config file.&ensp;*Must be given</br>
+&emsp;-i&emsp;&ensp;\<str\>&emsp;The data config file.&ensp;*Must be given</br>
 &emsp;-o&emsp;\<str\>&emsp;Name of directory for output.&ensp;\[default: CandiSSR_Run\]</br>
 &emsp;-p&emsp;\<str\>&emsp;The prefix of output file.&ensp;\[default: CandiSSR_Output\]</br>
 &emsp;-l&emsp;\<int\>&emsp;The flanking sequence length of SSRs.&ensp;\[default: 100\]</br>
