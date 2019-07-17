@@ -45,7 +45,7 @@ http://www.plantkingdomgdb.com/CandiSSR/
 
 Run the program
 ---------------
-&emsp;&ensp;Typing perl $DIRECTORY_OF_CandiSSR/CandiSSR.pl with below options.
+Typing perl $DIRECTORY_OF_CandiSSR/CandiSSR.pl with below options.
 
 <b>Usage:</b>
 
@@ -77,12 +77,12 @@ Run the program
 &emsp;&emsp;&ensp;Meanwhile, its species name must be set with "Ref" in the first column.</br>
 
 <b>Example</b> </br>
-   #Name          Path_to_data_files</br> 
-    Ref          ./sample_data/COL.fasta </br>
-    CRD          ./sample_data/CRD.fasta </br>
-    CSI          ./sample_data/CSI.fasta </br>
-    CTA          ./sample_data/CTA.fasta </br>
-    ......          ......
+&emsp;&ensp;#Name &emsp;&ensp; Path_to_data_files</br> 
+&emsp;&ensp;Ref &emsp;&ensp; ./sample_data/COL.fasta </br>
+&emsp;&ensp;CRD &emsp;&ensp; ./sample_data/CRD.fasta </br>
+&emsp;&ensp;CSI &emsp;&ensp; ./sample_data/CSI.fasta </br>
+&emsp;&ensp;CTA &emsp;&ensp; ./sample_data/CTA.fasta </br>
+&emsp;&ensp;...... &emsp;&ensp; ......
     
  Note: Lines begin with "#" will be ignored! 
 
