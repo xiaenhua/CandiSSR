@@ -45,13 +45,13 @@ http://www.plantkingdomgdb.com/CandiSSR/
 
 Run the program
 ---------------
-Typing perl $DIRECTORY_OF_CandiSSR/CandiSSR.pl with below options.
+&emsp;&ensp;Typing perl $DIRECTORY_OF_CandiSSR/CandiSSR.pl with below options.
 
 <b>Usage:</b>
 
-perl CandiSSR.pl -i Ctg_file -o CandiSSR_Run -p Prefix -l FlankingLen -s Identity -c Coverage -t Cpu [-h]
+&emsp;&ensp;perl CandiSSR.pl -i Ctg_file -o CandiSSR_Run -p Prefix -l FlankingLen -s Identity -c Coverage -t Cpu [-h]
 
-  <b>Options:</b></br>
+<b>Options:</b></br>
 &emsp;-i&emsp;&nbsp;\<str\>&emsp;The data config file.&ensp;*Must be given</br>
 &emsp;-o&emsp;\<str\>&emsp;Name of directory for output.&ensp;\[default: CandiSSR_Run\]</br>
 &emsp;-p&emsp;\<str\>&emsp;The prefix of output file.&ensp;\[default: CandiSSR_Output\]</br>
@@ -69,7 +69,9 @@ perl CandiSSR.pl -i Ctg_file -o CandiSSR_Run -p Prefix -l FlankingLen -s Identit
 &emsp;&ensp;1\) The data for each species/individual must be placed in one row with two columns: </br>
 &emsp;&emsp;&ensp;col1: Name of Species/individual; </br>
 &emsp;&emsp;&ensp;col2: The path to data file; </br>
+
 &emsp;&ensp;2\) They should be splited by space; </br>
+
 &emsp;&ensp;3\) !!!!Very important!!!! </br>
 &emsp;&emsp;&ensp;One species or individual must be selected as reference;</br> 
 &emsp;&emsp;&ensp;Meanwhile, its species name must be set with "Ref" in the first column.</br>
