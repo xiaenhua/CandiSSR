@@ -8,7 +8,7 @@ Simple sequence repeats (SSRs) (also called microsatellites), consisting of repe
 Installation
 ------------
 Dependent software and packages
- 1) Perl
+ 1) Perl</br>
     You should have perl installed, if not, it is freely available at https://www.perl.org/.
 
  2) MISA
@@ -42,6 +42,52 @@ A more detail installation steps please refers to: http://www.plantkingdomgdb.co
 Homepage
 --------
 http://www.plantkingdomgdb.com/CandiSSR/
+
+Run the program
+---------------
+Typing perl $DIRECTORY_OF_CandiSSR/CandiSSR.pl with below options.
+
+<b>Usage:</b>
+
+perl CandiSSR.pl -i Ctg_file -o CandiSSR_Run -p Prefix -l FlankingLen -s Identity -c Coverage -t Cpu [-h]
+
+ Options:
+ -i    <str>   The data config file. *Must be given.
+ -o   <str>   Name of directory for output. [default: CandiSSR_Run]
+ -p   <str>   The prefix of output file. [default: CandiSSR_Output]
+ -l    <int>   The flanking sequence length of SSRs. [default: 100]
+ -e   <int>   Blast evalue cutoff. [default: 1e-10]
+ -s   <int>   Blast identity cutoff. [default: 95]
+ -c   <int>   Blast coverage cutoff. [idefault: 95]
+ -t   <int>   Number of CPU used in blast searches. [default: 10]
+ -skipPE     Skip Primer Evaluation (PE) step, which is extremely time-consuming.
+ -clean        Clean the output directory and only retain the CandiSSR file.
+ -h               Show this help and exit.
+
+
+Data Config File Format (split by space):
+
+1) The data for each species/individual must be placed in one row with two columns: 
+      col1: Name of Species/individual; 
+      col2: The path to data file; 
+ 2) They should be splited by space; 
+3) !!!!Very important!!!! 
+      One species or individual must be selected as reference; 
+      Meanwhile, its species name must be set with "Ref" in the first column.
+
+Example 
+ #Name          Path_to_data_files 
+    Ref          ./sample_data/COL.fasta 
+    CRD          ./sample_data/CRD.fasta 
+    CSI          ./sample_data/CSI.fasta 
+    CTA          ./sample_data/CTA.fasta 
+     ......          ......
+ Note: Lines begin with "#" will be ignored! 
+
+
+For example, you can identify the candidate polymorphic SSRs for genus Camellia from the previously published 4 Camellia transcriptomic data1,2 like below. 
+
+$ perl CandiSSR.pl -i sample_data/Camellia_CandiSSR.ctl -o tea -p tea_est 
 
 Contact
 -------
