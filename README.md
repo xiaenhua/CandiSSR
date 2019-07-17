@@ -99,10 +99,10 @@ CandiSSR will output three files under the Output directory (with -o option):
 &emsp;&ensp; col1: CandiSSR ID;</br>
 &emsp;&ensp; col2: SSR type;</br>
 &emsp;&ensp; col3: The detail information for reference SSR; </br>
-&emsp;&ensp;&emsp;&ensp;       Repetition|SeqID:Start-End; such as: 5|Ref_315:735681-735895</br>
+&emsp;&ensp;&emsp;&ensp;&ensp;       Repetition|SeqID:Start-End; such as: <b>5|Ref_315:735681-735895</b></br>
 &emsp;&ensp; col4: Same as col3;</br>
 &emsp;&ensp; col5: Same as col3;</br>
-&emsp;&ensp;&emsp;&ensp;          <i><... if three genomes or transcriptomes provided ...></i></br>
+&emsp;&ensp;&emsp;&ensp;&ensp;          <i><... if three genomes or transcriptomes provided ...></i></br>
 &emsp;&ensp; col6: The Standard Deviation (SD) of SSR repetitions among different data sets;</br>
 &emsp;&ensp; col7: The SSR missing rate (missing/all);</br>
 &emsp;&ensp; col8: Average sequence similarity of flanking region of different species/individual;</br>
