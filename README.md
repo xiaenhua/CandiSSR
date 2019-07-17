@@ -106,7 +106,7 @@ CandiSSR will output three files under the Output directory (with -o option):
 &emsp;&ensp; col6: The Standard Deviation (SD) of SSR repetitions among different data sets;</br>
 &emsp;&ensp; col7: The SSR missing rate (missing/all);</br>
 &emsp;&ensp; col8: Average sequence similarity of flanking region of different species/individual;</br>
-&emsp;&ensp;           This value could be regarded as a transferability measure for primers designed;</br>
+&emsp;&ensp;&emsp;&ensp;&ensp;          This value could be regarded as a transferability measure for primers designed;</br>
 &emsp;&ensp; col9: The sequence from upstream 100bp of reference SSR; </br>
 &emsp;&ensp; col10: The sequence from downstream 100bp of reference SSR;</br>
 
