@@ -59,10 +59,10 @@ perl CandiSSR.pl -i Ctg_file -o CandiSSR_Run -p Prefix -l FlankingLen -s Identit
 &emsp;-e&emsp;\<int\>&emsp;Blast evalue cutoff.&ensp;\[default: 1e-10\]</br>
 &emsp;-s&emsp;\<int\>&emsp;Blast identity cutoff.&ensp;\[default: 95\]</br>
 &emsp;-c&emsp;\<int\>&emsp;Blast coverage cutoff.&ensp;\[idefault: 95\]</br>
-&emsp;-t&emsp;&nbsp;\<int\>&emsp;Number of CPU used in blast searches.&ensp;\[default: 10\]</br>
+&emsp;-t&emsp;\<int\>&emsp;Number of CPU used in blast searches.&ensp;\[default: 10\]</br>
 &emsp;-skipPE&emsp;&ensp;&nbsp;Skip Primer Evaluation (PE) step, which is extremely time-consuming</br>
 &emsp;-clean&emsp;&emsp;&ensp;&nbsp;Clean the output directory and only retain the CandiSSR file</br>
-&emsp;-h&emsp;&emsp;&ensp;&nbsp;Show this help and exit</br>
+&emsp;-h&emsp;&emsp;&emsp;&ensp;&nbsp;Show this help and exit</br>
 
 <b>Data Config File Format (split by space):</b>
 
