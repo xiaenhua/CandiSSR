@@ -11,30 +11,29 @@ Dependent software and packages
  1) Perl</br>
     You should have perl installed, if not, it is freely available at https://www.perl.org/.
 
- 2) MISA
+ 2) MISA</br>
     It is freely available at http://pgrc.ipk-gatersleben.de/misa/.
 
- 3) NCBI Blast
-    Note: The NCBI Blastall package (version: 2.2.26) works well. 
+ 3) NCBI Blastall</br>
+    Note: The NCBI Blastall package (version: 2.2.26) NOT ncbi-blast+ works well.</br>
     It is freely available at ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.2.26/.
 
- 4) Bioperl packages (SearchIO and getopt)
+ 4) Bioperl packages (SearchIO and getopt)</br>
     It is freely available at http://bioperl.org/DIST/.
 
- 5) ClustalW
+ 5) ClustalW</br>
     It is freely available at: http://www.clustal.org/download/current/.
 
- 6) Primer3
+ 6) Primer3 (version 2.3.6)</br>
     It is freely available at: http://primer3.sourceforge.net/.
 
 Alternatively, you can download all the requirments from our website at: http://www.plantkingdomgdb.com/CandiSSR/requirments/
 
-After downloading and installing all the dependent software and packages, you can install the pipeline fllowing the below steps:
+<b>To install the pipeline</b>
  1) download the file CandiSSR.tar.gz
  2) unpack CandiSSR.tar.gz
  3) cd CandiSSR
- 4) sh setup.sh
- 
+ 4) bash setup.sh<br/>
  The setup script will ask you a few basic questions to setup CandiSSR.
 
 A more detail installation steps please refers to: http://www.plantkingdomgdb.com/CandiSSR/install_on_linux.html
@@ -65,25 +64,25 @@ perl CandiSSR.pl -i Ctg_file -o CandiSSR_Run -p Prefix -l FlankingLen -s Identit
  -h               Show this help and exit.
 
 
-Data Config File Format (split by space):
+<b>Data Config File Format (split by space):</b>
 
-1) The data for each species/individual must be placed in one row with two columns: 
+   1) The data for each species/individual must be placed in one row with two columns: 
       col1: Name of Species/individual; 
       col2: The path to data file; 
- 2) They should be splited by space; 
-3) !!!!Very important!!!! 
+   2) They should be splited by space; 
+   3) !!!!Very important!!!! 
       One species or individual must be selected as reference; 
       Meanwhile, its species name must be set with "Ref" in the first column.
 
-Example 
- #Name          Path_to_data_files 
+<b>Example</b> 
+   #Name          Path_to_data_files 
     Ref          ./sample_data/COL.fasta 
     CRD          ./sample_data/CRD.fasta 
     CSI          ./sample_data/CSI.fasta 
     CTA          ./sample_data/CTA.fasta 
-     ......          ......
+    ......          ......
+    
  Note: Lines begin with "#" will be ignored! 
-
 
 For example, you can identify the candidate polymorphic SSRs for genus Camellia from the previously published 4 Camellia transcriptomic data1,2 like below. 
 
