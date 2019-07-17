@@ -62,15 +62,15 @@ perl CandiSSR.pl -i Ctg_file -o CandiSSR_Run -p Prefix -l FlankingLen -s Identit
 &emsp;-t&emsp;\<int\>&emsp;Number of CPU used in blast searches.&ensp;\[default: 10\]</br>
 &emsp;-skipPE&emsp;&ensp;&nbsp;&nbsp;Skip Primer Evaluation (PE) step, which is extremely time-consuming</br>
 &emsp;-clean&emsp;&emsp;&ensp;Clean the output directory and only retain the CandiSSR file</br>
-&emsp;-h&emsp;&emsp;&emsp;&ensp;&nbsp;&nbsp;Show this help and exit</br>
+&emsp;-h&emsp;&emsp;&emsp;&ensp;&nbsp;&nbsp;&nbsp;Show this help and exit</br>
 
 <b>Data Config File Format (split by space):</b>
 
-   1) The data for each species/individual must be placed in one row with two columns: </br>
+   1\) The data for each species/individual must be placed in one row with two columns: </br>
       col1: Name of Species/individual; </br>
       col2: The path to data file; </br>
-   2) They should be splited by space; </br>
-   3) !!!!Very important!!!! </br>
+   2\) They should be splited by space; </br>
+   3\) !!!!Very important!!!! </br>
       One species or individual must be selected as reference;</br> 
       Meanwhile, its species name must be set with "Ref" in the first column.</br>
 
