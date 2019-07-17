@@ -49,7 +49,7 @@ Typing perl $DIRECTORY_OF_CandiSSR/CandiSSR.pl with below options.
 
 <b>Usage:</b>
 
-&emsp;&ensp;perl CandiSSR.pl -i Ctg_file -o CandiSSR_Run -p Prefix -l FlankingLen -s Identity -c Coverage -t Cpu [-h]
+&emsp;perl CandiSSR.pl -i Ctg_file -o CandiSSR_Run -p Prefix -l FlankingLen -s Identity -c Coverage -t Cpu [-h]
 
 <b>Options:</b></br>
 &emsp;-i&emsp;&nbsp;\<str\>&emsp;The data config file.&ensp;*Must be given</br>
@@ -74,7 +74,7 @@ Typing perl $DIRECTORY_OF_CandiSSR/CandiSSR.pl with below options.
 
 &emsp;&ensp;3\) !!!!Very important!!!! </br>
 &emsp;&emsp;&ensp;One species or individual must be selected as reference;</br> 
-&emsp;&emsp;&ensp;Meanwhile, its species name must be set with "Ref" in the first column.</br>
+&emsp;&emsp;&ensp;Meanwhile, its species name must be set as "Ref" in the first column.</br>
 
 <b>Example</b> </br>
 &emsp;&ensp;#Name &emsp;&ensp; Path_to_data_files</br> 
@@ -88,7 +88,7 @@ Typing perl $DIRECTORY_OF_CandiSSR/CandiSSR.pl with below options.
 
 For example, you can identify the candidate polymorphic SSRs for genus Camellia from the previously published 4 Camellia transcriptomic data1,2 like below. 
 
-$ perl CandiSSR.pl -i sample_data/Camellia_CandiSSR.ctl -o tea -p tea_est 
+$ <b>perl CandiSSR.pl -i sample_data/Camellia_CandiSSR.ctl -o tea -p tea_est </b> 
 
 Contact
 -------
