@@ -52,8 +52,8 @@ Typing perl $DIRECTORY_OF_CandiSSR/CandiSSR.pl with below options.
 perl CandiSSR.pl -i Ctg_file -o CandiSSR_Run -p Prefix -l FlankingLen -s Identity -c Coverage -t Cpu [-h]
 
   <b>Options:</b></br>
-&emsp;-i&emsp;<str>&emsp;The data config file. *Must be given</br>
-&emsp;-o&emsp;<str>&emsp;Name of directory for output.  [default: CandiSSR_Run]</br>
+&emsp;-i&emsp;\<str\>&emsp;The data config file. *Must be given</br>
+&emsp;-o&emsp;\<str\>&emsp;Name of directory for output.  [default: CandiSSR_Run]</br>
 &emsp;-p&emsp;<str>&emsp;The prefix of output file. [default: CandiSSR_Output]</br>
 &emsp;-l&emsp;<int>&emsp;The flanking sequence length of SSRs. [default: 100]</br>
 &emsp;-e&emsp;<int>&emsp;Blast evalue cutoff. [default: 1e-10]</br>
