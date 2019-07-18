@@ -37,7 +37,7 @@ Installation
  
  The setup script will ask you a few basic questions to setup CandiSSR.
 
-A more detail installation steps please refers to: http://www.plantkingdomgdb.com/CandiSSR/install_on_linux.html
+A more detail installation steps please refers to: https://github.com/xiaenhua/CandiSSR/blob/master/docs/install_on_linux.txt
 
 Run the program
 ---------------
