@@ -39,10 +39,6 @@ Installation
 
 A more detail installation steps please refers to: http://www.plantkingdomgdb.com/CandiSSR/install_on_linux.html
 
-Homepage
---------
-http://www.plantkingdomgdb.com/CandiSSR/
-
 Run the program
 ---------------
 Typing perl $DIRECTORY_OF_CandiSSR/CandiSSR.pl with below options.
@@ -130,6 +126,10 @@ CandiSSR will output three files under the Output directory (with -o option):
 &emsp;&ensp; ... ...</br>
 &emsp;&ensp; Note: Three primer pairs were designed for each PolySSRs identified. </br>
  
+Homepage
+--------
+http://www.plantkingdomgdb.com/CandiSSR/
+
 Contact
 -------
 Dr. En-Hua Xia (xiaenhua@gmail.com) and CC to Dr. Li-Zhi Gao (lgao@mail.kib.ac.cn)
@@ -144,4 +144,4 @@ Citation
 --------
 Please cite us if you use CandiSSR:
 
-Xia EH, Yao QY, Zhang HB, Jiang JJ, Zhang LP and Gao LZ. (2016). CandiSSR: An efficient pipeline used for identifying candidate polymorphic SSRs based on multiple assembled sequences. Front. Plant Sci. 6:1171. doi: 10.3389/fpls.2015.01171
+Xia EH, Yao QY, Zhang HB, Jiang JJ, Zhang LP and Gao LZ. (2016). CandiSSR: An efficient pipeline used for identifying candidate polymorphic SSRs based on multiple assembled sequences. <b><i>Front. Plant Sci.</i></b> 6:1171. doi: 10.3389/fpls.2015.01171
