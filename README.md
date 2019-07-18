@@ -26,7 +26,7 @@ Dependances
  6) Primer3 (version 2.3.6)</br>
     It is freely available at: http://primer3.sourceforge.net/.
 
-Alternatively, you can download all the requirments from our website at: http://www.plantkingdomgdb.com/CandiSSR/requirments/
+Alternatively, you can download all the requirments from our website at: https://github.com/xiaenhua/CandiSSR/tree/master/requirments
 
 Installation
 ------------
