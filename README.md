@@ -125,10 +125,6 @@ CandiSSR will output three files under the Output directory (with -o option):
 &emsp;&ensp; col11: Average reverse sequence coverage for primers designed in Ref against others.</br>
 &emsp;&ensp; ... ...</br>
 &emsp;&ensp; Note: Three primer pairs were designed for each PolySSRs identified. </br>
- 
-Homepage
---------
-http://www.plantkingdomgdb.com/CandiSSR/
 
 Contact
 -------
@@ -144,4 +140,4 @@ Citation
 --------
 Please cite us if you use CandiSSR:
 
-Xia EH, Yao QY, Zhang HB, Jiang JJ, Zhang LP and Gao LZ. (2016). CandiSSR: An efficient pipeline used for identifying candidate polymorphic SSRs based on multiple assembled sequences. <b><i>Frontiers in Plant Sciences</i></b> 6:1171. doi: 10.3389/fpls.2015.01171
+Xia EH, Yao QY, Zhang HB, Jiang JJ, Zhang LP and Gao LZ. (2016). CandiSSR: An efficient pipeline used for identifying candidate polymorphic SSRs based on multiple assembled sequences. <b><i>Frontiers in Plant Sciences</i></b> 6:1171. doi: https://doi.org/10.3389/fpls.2015.01171
